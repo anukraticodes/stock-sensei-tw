@@ -1,10 +1,20 @@
+"use client"
+
+import { useState } from "react"
 import { Sidebar } from "@/components/sidebar"
+import { PortfolioChatbot } from "@/components/portfolio-chatbot"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { MarketTrendsChart } from "@/components/market-trends-chart"
 import { Button } from "@/components/ui/button"
 import { CheckCircle, Clock, Calendar, ArrowRight } from "lucide-react"
 
 export default function PortfolioPage() {
+  const [isChatbotOpen, setIsChatbotOpen] = useState(false)
+
+  const toggleChatbot = () => {
+    setIsChatbotOpen(!isChatbotOpen)
+  }
+
   return (
     <div className="flex h-screen bg-gray-50">
       <Sidebar />
@@ -12,6 +22,7 @@ export default function PortfolioPage() {
       <div className="flex-1 overflow-auto">
         <div className="p-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Market Trends Section */}
             <Card className="lg:col-span-1">
               <CardHeader>
                 <CardTitle>Market Trends</CardTitle>
@@ -22,6 +33,7 @@ export default function PortfolioPage() {
               </CardContent>
             </Card>
 
+            {/* Upcoming Tasks & Alerts Section */}
             <Card>
               <CardHeader>
                 <CardTitle>Upcoming Tasks & Alerts</CardTitle>
@@ -51,6 +63,7 @@ export default function PortfolioPage() {
               </CardContent>
             </Card>
 
+            {/* AI-Powered Insights Section */}
             <Card>
               <CardHeader>
                 <CardTitle>AI-Powered Insights</CardTitle>
@@ -85,8 +98,45 @@ export default function PortfolioPage() {
               </CardContent>
             </Card>
           </div>
+
+          {/* AI Portfolio Assistant Section */}
+          <div className="mt-8">
+            <Card>
+              <CardHeader>
+                <CardTitle>AI Portfolio Assistant</CardTitle>
+                <CardDescription>Get personalized investment advice and portfolio recommendations</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="text-sm text-muted-foreground">Our AI assistant can help you with:</div>
+                <ul className="text-sm space-y-2">
+                  <li className="flex items-center gap-2">
+                    <div className="h-1.5 w-1.5 bg-blue-600 rounded-full" />
+                    Portfolio diversification strategies
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="h-1.5 w-1.5 bg-blue-600 rounded-full" />
+                    Risk assessment and management
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="h-1.5 w-1.5 bg-blue-600 rounded-full" />
+                    Asset allocation recommendations
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="h-1.5 w-1.5 bg-blue-600 rounded-full" />
+                    Market analysis and insights
+                  </li>
+                </ul>
+                <Button onClick={toggleChatbot} className="w-full">
+                  Start Chat with AI Assistant
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
+
+      {/* Chatbot Component */}
+      <PortfolioChatbot isOpen={isChatbotOpen} onToggle={toggleChatbot} />
     </div>
   )
 }
