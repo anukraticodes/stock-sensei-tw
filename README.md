@@ -40,16 +40,17 @@ The project prototype video is embedded in the same file. Open the link above an
 ## 🛠 Tech Stack
 
 ### 🎨 Frontend
-- **React.js** with **JavaScript** and **TypeScript**
-- Clean and responsive UI built for ease of use
+- **React.js** with **JavaScript** and **TypeScript**  
+- Clean and responsive UI built for ease of use  
+- *Currently, only the frontend has been implemented*
 
-### 🔧 Backend
+### 🔧 Backend *(Planned)*
 - **Django** or **Flask** (API development and user management)
 
-### 🗃️ Database
+### 🗃️ Database *(Planned)*
 - **PostgreSQL** or **MongoDB** to store user portfolios, stock history, and preferences
 
-### 🌐 APIs
+### 🌐 APIs *(Planned)*
 - **Alpha Vantage**, **Yahoo Finance**, or **IEX Cloud** for live market data
 
 ---
