@@ -3,7 +3,15 @@
 StockSensei is an AI-powered **investment literacy and portfolio management system** built to help users—especially beginners—navigate the complex world of stocks and smart investing. It combines live market data, educational tools, and portfolio-building intelligence, all under one intuitive platform.
 
 ---
+## 📽️ Project Demo & Presentation
 
+📊 **Presentation (PPT):**  
+[Click here to view the PPT presentation](https://drive.google.com/file/d/1LHjunKFksJ3_6HmDGHMSaVTZW4jO5HdH/view?usp=sharing)
+
+🎥 **Prototype Demo (Video included in PPT)**  
+The project prototype video is embedded in the same file. Open the link above and play the video from within the presentation.
+
+---
 ## 🚀 Features
 
 ### 1. 📊 **Dashboard**
