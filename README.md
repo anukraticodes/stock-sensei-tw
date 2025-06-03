@@ -5,6 +5,10 @@ StockSensei is an AI-powered **investment literacy and portfolio management syst
 ---
 ## 📽️ Project Demo & Presentation
 
+🚀 **Live Demo:**
+Check out the live deployment here:  
+👉 [StockSensei Dashboard](https://stock-sensei-1dt1iw7gz-chaturvedianukrati4-gmailcoms-projects.vercel.app/dashboard)
+
 📊 **Presentation (PPT):**  
 [Click here to view the PPT presentation](https://drive.google.com/file/d/1LHjunKFksJ3_6HmDGHMSaVTZW4jO5HdH/view?usp=sharing)
 
