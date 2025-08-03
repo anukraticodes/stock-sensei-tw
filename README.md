@@ -87,6 +87,7 @@ Watch the prototype video:
 ## 🧑‍💻 Author
 
 **Anukrati Chaturvedi**
+
 **Aakarsh Narang**
 
 ---
